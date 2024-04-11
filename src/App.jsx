@@ -71,7 +71,7 @@ function App() {
                       {search && available.map(bks => {
                         if (bks.book.title.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
                           return (
-                            <div className='relative p-4 rounded-2xl bg-slate-50' key={bks.book.title}>
+                            <div className='relative p-4 top-[-25px] rounded-2xl bg-slate-50' key={bks.book.title}>
                               <div onClick={() => handleAdd(bks)} >
                                 <Card book={bks} />
                               </div>
